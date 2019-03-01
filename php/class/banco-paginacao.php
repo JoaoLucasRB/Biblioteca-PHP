@@ -4,7 +4,7 @@ class BancoPaginacao {
 
     # Funcao que retorna a quantidade de paginas
     public function getPaginas($conexaoBD){
-        $query = "select id from produto";
+        $query = "select id from livro";
         $resultado = $conexaoBD->query($query);
         $qtdP = 0;
         while($produto = $resultado->fetch_assoc()){
